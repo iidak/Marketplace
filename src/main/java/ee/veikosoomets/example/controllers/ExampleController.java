@@ -22,8 +22,9 @@ public class ExampleController {
     }
 
     @PostMapping("/input")
-    public User getInput(String input) {
-        return repository.save(new User(input, "person"));
+    public String getInput(String input) {
+        repository.save(new User(input, "person"));
+        return "Success!";
     }
 
     @GetMapping("/role")
