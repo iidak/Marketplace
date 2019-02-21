@@ -7,6 +7,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.List;
+
 @RestController
 public class ExampleController {
 
@@ -30,5 +32,10 @@ public class ExampleController {
     @GetMapping("/role")
     public User getRole(@PathVariable Long id) {
         return repository.findById(id).orElseThrow(RuntimeException::new);
+    }
+
+    @GetMapping("/roles")
+    public List<User> getAll() {
+        return repository.findAll();
     }
 }
