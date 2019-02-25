@@ -2,16 +2,15 @@ package ee.veikosoomets.example.controllers;
 
 import ee.veikosoomets.example.entities.User;
 import ee.veikosoomets.example.repository.UserRepository;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @RestController
 public class ExampleController {
 
+    @Autowired
     private final UserRepository repository;
 
     ExampleController(UserRepository repository) {
@@ -24,13 +23,17 @@ public class ExampleController {
     }
 
     @PostMapping("/input")
-    public String getInput(String input) {
-        repository.save(new User(input, "person"));
-        return "Success!";
+    public User getInput(@RequestBody User user) {
+        return repository.save(user);
+    }
+
+    @GetMapping("/role/{id}")
+    public User getRole(@PathVariable Long id) {
+        return repository.findById(id).orElseThrow(RuntimeException::new);
     }
 
     @GetMapping("/role")
-    public User getRole(@PathVariable Long id) {
+    public User getRoleById(@RequestParam() Long id) {
         return repository.findById(id).orElseThrow(RuntimeException::new);
     }
 
