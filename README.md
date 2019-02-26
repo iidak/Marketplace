@@ -34,7 +34,7 @@ As a logged in company representative I want to decline an influencer who is int
 
 As a logged in company representative I want to remove my campaign
 
-# First iteration results
+# First iteration results:
 
 User interface and interaction prototype is done for both sides. Accessible in Sketch.
 
@@ -59,7 +59,7 @@ Iida is working on frontend.
 
 We met up 2x a week (total 6h) to discuss the project details together.
 
-# Second iteration goals
+# Second iteration goals:
 
 Frontend – understand how views work in Vue.js and how to navigate between them (eg. Submit button leads to Dashboard).
 Influencer can see campaigns posted by brands (get method to Influencer flow)
