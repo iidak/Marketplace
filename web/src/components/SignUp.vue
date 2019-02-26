@@ -1,9 +1,9 @@
 <template>
     <div>
-        <form v-on:submit.exact="sub" action="#" method="post" @submit.prevent="postPost">
+        <form>
             <label class="field">Name</label>
             <input v-model="name" type="text" class="input" placeholder="Name">
-            <button type="submit" class="button">Submit</button>
+            <button type="submit" class="button" @click="postPost">Submit</button>
         </form>
     </div>
 </template>
