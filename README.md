@@ -59,6 +59,10 @@ Iida is working on frontend.
 
 We met up 2x a week (total 6h) to discuss the project details together.
 
+What could have been better:
+– setting up the project took a lot of time
+– both frontend and backend needed to work side-by-side to have some successful results. Should get better with time
+
 # Second iteration goals:
 
 Frontend – understand how views work in Vue.js and how to navigate between them (eg. Submit button leads to Dashboard).
