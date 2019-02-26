@@ -10,16 +10,18 @@
 
 <script>
     import axios from "axios";
+
     export default {
         name: "sign-up.vue",
         data() {
             return {
-                name: ''
+                name: ""
             }
         },
+
         methods: {
             postPost() {
-                axios.post('http://localhost:8080/input', this.name).then(response => {this.name = response.data})
+                axios.post('http://localhost:8080/input', {name: this.name}).then(response => {this.name = response.data})
             }
         }
 

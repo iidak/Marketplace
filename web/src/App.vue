@@ -24,7 +24,7 @@
             }
         },
         mounted () {
-            axios.get('http://localhost:8080/hello-world').then(response => (this.hello = response.data));
+            axios.get('http://localhost:8080/roles').then(response => (this.hello = response.data));
         }
     }
 </script>
