@@ -3,10 +3,10 @@
 Overview and goals:
 Create a platform/marketplace to connect influencers and businesses. Businesses can create campaigns that can be completed by influencers by posting images to their social accounts.
 
-*Influencer goals: can sign up to the page. Can wait for offers, then accept and get connected with brands (see their email).
+Influencer goals: can sign up to the page. Can wait for offers, then accept and get connected with brands (see their email).
 Brand goals: can sign up to the page. Can create campaigns and wait influencers to accept them. Once influencer accepts they see their emails.
 
-*Business case: Freemium business model for businesses. Ask money from brands if they want to get an access to the full lsit of influencer matches to their campaign. Platform is free to use for influencers.
+Business case: Freemium business model for businesses. Ask money from brands if they want to get an access to the full lsit of influencer matches to their campaign. Platform is free to use for influencers.
 
 User stories:
 
