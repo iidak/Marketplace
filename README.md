@@ -8,7 +8,7 @@ Brand goals: can sign up to the page. Can create campaigns and wait influencers 
 
 Business case: Freemium business model for businesses. Ask money from brands if they want to get an access to the full lsit of influencer matches to their campaign. Platform is free to use for influencers.
 
-User stories:
+# User stories:
 
 As an influencer I want to set up a profile
 
@@ -33,3 +33,34 @@ As a logged in company representative I want to accept an influencer who is inte
 As a logged in company representative I want to decline an influencer who is interested in my campaign
 
 As a logged in company representative I want to remove my campaign
+
+# First iteration results
+
+User interface and interaction prototype is done for both sides. Accessible in Sketch.
+
+Influencer flow:
+Choose Brand or Influencer –> Enter email, password –> Enter name –> Enter social platform links –> Set up profile (audience, interests) –> Welcome popup –> Dashboard –> Wait offers –> Accept offer –> Wait for Brand to accept –> Get connected with Brand
+
+Brand flow:
+Choose Brand of Influencer –> Enter business name, contact person name –> Enter email, password –> Dashboard –> Create a campaign -> Enter campaign description —> Enter campaign audience –> Review campaign –> Wait for matches –> Accept matches –> Get connected with Influencer
+
+Interactive prototype video: https://www.dropbox.com/s/efeuk092dk8vw39/Influencer_Flow.mov?dl=0
+Prototype files: https://www.dropbox.com/sh/njej9vv6d6dz7bl/AAC0xlVpCRJsPYAlOl_1nmbNa?dl=0
+
+Tech results:
+Successful post method with Vue.js interface
+Implemented "Router" logic to Vue.js to build views
+Learnd Spring Boot
+Learned Vue.js
+Did a experiment with Maven development, but it failed because we based it on an old tutorial and dependencies did not work well. We couldn't fix it, so started with new project based on given template which works with Gradle.
+
+Sten and Nils are working on backend.
+Iida is working on frontend.
+
+We met up 2x a week (total 6h) to discuss the project details together.
+
+# Second iteration goals
+
+Frontend – understand how views work in Vue.js and how to navigate between them (eg. Submit button leads to Dashboard).
+Influencer can see campaigns posted by brands (get method to Influencer flow)
+Brand can post campaigns (post method to Brand flow)
