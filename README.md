@@ -48,20 +48,23 @@ Interactive prototype video: https://www.dropbox.com/s/efeuk092dk8vw39/Influence
 Prototype files: https://www.dropbox.com/sh/njej9vv6d6dz7bl/AAC0xlVpCRJsPYAlOl_1nmbNa?dl=0
 
 Tech results:
-Successful post method with Vue.js interface
-Implemented "Router" logic to Vue.js to build views
-Learnd Spring Boot
-Learned Vue.js
+Successful post method with Vue.js interface;
+Implemented "Router" logic to Vue.js to build views;
+Learnd Spring Boot;
+Learned Vue.js;
 Did a experiment with Maven development, but it failed because we based it on an old tutorial and dependencies did not work well. We couldn't fix it, so started with new project based on given template which works with Gradle.
 
-Sten and Nils are working on backend.
-Iida is working on frontend.
+Sten is working on backend (learning and writing Spring Boot).
+Iida and Nils are working on frontend (learning and writing Vue.js; designing user flows).
+Together the group came up with the idea and plan for the project; Also together the group was able to connect frontend with backend.
 
-We met up 2x a week (total 6h) to discuss the project details together.
+We met up 2x every week (6h each week) to discuss the project details together. This was followed by individiual work.
 
 What could have been better:
 – setting up the project took a lot of time
-– both frontend and backend needed to work side-by-side to have some successful results. Should get better with time
+– both frontend and backend needed to work side-by-side to have some successful results. Should get better with time.
+
+First iteration presentation slides: https://docs.google.com/presentation/d/1B17UtEQercZqSQC2F9rdt5r1uQMoINQeG-X3_ecDr3w/edit?usp=sharing
 
 # Second iteration goals:
 
