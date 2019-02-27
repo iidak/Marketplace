@@ -54,8 +54,8 @@ Learnd Spring Boot;
 Learned Vue.js;
 Did a experiment with Maven development, but it failed because we based it on an old tutorial and dependencies did not work well. We couldn't fix it, so started with new project based on given template which works with Gradle.
 
-Sten is working on backend.
-Iida and Nils are working on frontend.
+Sten is working on backend (learning and writing Spring Boot).
+Iida and Nils are working on frontend (learning and writing Vue.js; designing user flows).
 
 We met up 2x every week (6h each week) to discuss the project details together. This was followed by individiual work.
 
