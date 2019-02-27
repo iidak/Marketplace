@@ -62,7 +62,9 @@ We met up 2x every week (6h each week) to discuss the project details together. 
 
 What could have been better:
 – setting up the project took a lot of time
-– both frontend and backend needed to work side-by-side to have some successful results. Should get better with time
+– both frontend and backend needed to work side-by-side to have some successful results. Should get better with time.
+
+First iteration presentation slides: https://docs.google.com/presentation/d/1B17UtEQercZqSQC2F9rdt5r1uQMoINQeG-X3_ecDr3w/edit?usp=sharing
 
 # Second iteration goals:
 
