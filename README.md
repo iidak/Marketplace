@@ -56,6 +56,7 @@ Did a experiment with Maven development, but it failed because we based it on an
 
 Sten is working on backend (learning and writing Spring Boot).
 Iida and Nils are working on frontend (learning and writing Vue.js; designing user flows).
+Together the group came up with the idea and plan for the project; Also together the group was able to connect frontend with backend.
 
 We met up 2x every week (6h each week) to discuss the project details together. This was followed by individiual work.
 
