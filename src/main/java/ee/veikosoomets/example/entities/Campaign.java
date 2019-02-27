@@ -10,7 +10,7 @@ import javax.persistence.Id;
 @Data
 @Entity
 @AllArgsConstructor
-public class Offer {
+public class Campaign {
 
     private @Id @GeneratedValue Long id;
     private String title;

@@ -1,9 +1,6 @@
 <template>
     <div id="app">
-            <nav>
-                <router-link to="/signup">Brand</router-link>
-                <router-link to="/todolist">Influencer</router-link>
-            </nav>
+
         <router-view></router-view>
         <HelloWorld v-bind:msg="hello"/>
     </div>
