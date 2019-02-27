@@ -1,6 +1,6 @@
 package ee.veikosoomets.example.UserService;
 
-import ee.veikosoomets.example.repository.OfferRepository;
+import ee.veikosoomets.example.repository.CampaignRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -8,5 +8,5 @@ import org.springframework.stereotype.Service;
 public class OfferService {
 
     @Autowired
-    private OfferRepository offerRepository;
+    private CampaignRepository campaignRepository;
 }
