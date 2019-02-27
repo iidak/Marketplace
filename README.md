@@ -54,10 +54,10 @@ Learnd Spring Boot;
 Learned Vue.js;
 Did a experiment with Maven development, but it failed because we based it on an old tutorial and dependencies did not work well. We couldn't fix it, so started with new project based on given template which works with Gradle.
 
-Sten and Nils are working on backend.
-Iida is working on frontend.
+Sten is working on backend.
+Iida and Nils are working on frontend.
 
-We met up 2x a week (total 6h) to discuss the project details together.
+We met up 2x every week (6h each week) to discuss the project details together. This was followed by individiual work.
 
 What could have been better:
 – setting up the project took a lot of time
