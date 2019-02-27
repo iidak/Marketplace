@@ -16,10 +16,11 @@ public class User {
 
     private @Id @GeneratedValue Long id;
     private String name;
-    private String role = "tere";
+    private String password;
 
-    public User(String name) {
+    public User(String name, String password) {
         this.name = name;
+        this.password = password;
     }
 
     /*@Override
