@@ -34,5 +34,7 @@ public class Offer {
     public void offerDeclined() {
         status = Status.DECLINED;
     }
-    
+
+
+
 }

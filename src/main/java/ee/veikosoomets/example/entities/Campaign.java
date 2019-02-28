@@ -15,11 +15,14 @@ import javax.persistence.Id;
 public class Campaign {
 
     private @Id @GeneratedValue Long id;
+    private Brand brand;
     private String title;
-    private String body;
+    private String description;
+    private Audience audience;
 
-    public Campaign(String title, String body) {
+    public Campaign(Brand brand, String title, String description) {
+        this.brand = brand;
         this.title = title;
-        this.body = body;
+        this.description = description;
     }
 }

@@ -15,12 +15,16 @@ import javax.persistence.Id;
 public class User {
 
     private @Id @GeneratedValue Long id;
-    private String name;
+    private String email;
     private String password;
+    private String firstName;
+    private String lastName;
 
-    public User(String name, String password) {
-        this.name = name;
+    public User(String email, String password, String firstName, String lastName) {
+        this.email = email;
         this.password = password;
+        this.firstName = firstName;
+        this.lastName = lastName;
     }
 
     /*@Override
