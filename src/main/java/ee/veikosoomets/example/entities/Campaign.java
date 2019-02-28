@@ -30,4 +30,9 @@ public class Campaign {
         this.audience = audience;
         this.offers = offers;
     }
+
+    public Campaign(String title, String description) {
+        this.title = title;
+        this.description = description;
+    }
 }
