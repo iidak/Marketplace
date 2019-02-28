@@ -3,7 +3,7 @@
         <h1>Create campaign: </h1>
         <input type="text" placeholder="Campaign title">
         <input type="text" placeholder="Campaign description">
-        <button type="submit" class="button" @click="addCampaign">Submit</button>
+        <button type="submit" class="main-button" @click="addCampaign">Next</button>
     </div>
 </template>
 
