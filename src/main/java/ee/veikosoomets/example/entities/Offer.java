@@ -5,6 +5,9 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.OneToOne;
 
 @Data
 @Entity
@@ -12,10 +15,13 @@ import javax.persistence.Entity;
 @NoArgsConstructor
 public class Offer {
 
-    Campaign campaign;
-    Influencer influencer;
+    private @Id @GeneratedValue Long id;
+    @OneToOne
+    private Campaign campaign;
+    @OneToOne
+    private Influencer influencer;
     enum Status { SENT, ACCEPTED, MATCHED, DECLINED }
-    Status status;
+    private Status status;
 
     public Offer(Campaign campaign, Influencer influencer) {
         this.campaign = campaign;
