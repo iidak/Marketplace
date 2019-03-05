@@ -16,12 +16,9 @@ public class ExampleController {
     @Autowired
     private final UserRepository userRepository;
 
-    @Autowired
-    private final CampaignRepository campaignRepository;
 
-    ExampleController(UserRepository userRepository, CampaignRepository campaignRepository) {
+    ExampleController(UserRepository userRepository) {
         this.userRepository = userRepository;
-        this.campaignRepository = campaignRepository;
     }
 
     @GetMapping("/hello-world")
@@ -49,13 +46,4 @@ public class ExampleController {
         return userRepository.findAll();
     }
 
-    @PostMapping("/addCampaign")
-    public Campaign addCampaign(@RequestBody Campaign campaign) {
-        return campaignRepository.save(campaign);
-    }
-
-    @GetMapping("/getCampaigns")
-    public List<Campaign> getAllCampaigns() {
-        return campaignRepository.findAll();
-    }
 }
