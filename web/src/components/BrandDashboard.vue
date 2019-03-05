@@ -6,21 +6,8 @@
 </template>
 
 <script>
-    import HelloWorld from './HelloWorld.vue'
-    import axios from "axios";
     export default {
         name: 'app',
-        components: {
-            HelloWorld,
-        },
-        data() {
-            return {
-                hello: null
-            }
-        },
-        mounted () {
-            axios.get('http://localhost:8080/roles').then(response => (this.hello = response.data));
-        }
     }
 </script>
 

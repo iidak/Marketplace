@@ -1,9 +1,10 @@
 <template>
-    <div>
+    <div class="view-main">
         <h1>Create campaign: </h1>
-        <input type="text" placeholder="Campaign title">
-        <input type="text" placeholder="Campaign description">
-        <button type="submit" class="main-button" @click="addCampaign">Next</button>
+        <b-form-input v-validate="required" name="fieldName" v-model="title" type="text" placeholder="Campaign title"/>
+        <span>{{ errors.first('fieldName') }}</span>
+        <b-form-textarea id="input-default" type="text" placeholder="Campaign description" v-model="description"/>
+        <b-button type="submit" class="button-main" @click="addCampaign">Next</b-button>
     </div>
 </template>
 
@@ -14,12 +15,12 @@
         data() {
             return {
                 title: "",
-                body: ""
+                description: ""
             }
         },
         methods: {
             addCampaign() {
-                axios.post('http://localhost:8080/addCampaign', {title: this.title, body: this.body}).then(response => {this.title = response.data})
+                axios.post('http://localhost:8080/addCampaign', {title: this.title, description: this.description}).then(response => {this.title = response.data})
             }
         }
     }

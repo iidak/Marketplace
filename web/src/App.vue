@@ -1,31 +1,14 @@
 <template>
     <div id="app">
 
-        <router-view></router-view>
-        <HelloWorld v-bind:msg="hello"/>
+        <router-view>Router</router-view>
     </div>
 </template>
 
 
 <script>
-    import HelloWorld from './components/HelloWorld.vue'
-    import axios from "axios";
-    import 'bootstrap/dist/css/bootstrap.css'
-    import 'bootstrap-vue/dist/bootstrap-vue.css'
-
     export default {
         name: 'app',
-        components: {
-            HelloWorld,
-        },
-        data() {
-            return {
-                hello: null
-            }
-        },
-        mounted () {
-            axios.get('http://localhost:8080/roles').then(response => (this.hello = response.data));
-        }
     }
 </script>
 

@@ -1,8 +1,7 @@
 <template>
     <div>
-        <CreateCampaign v-if="hasCampaign"></CreateCampaign>
-        <BrandDashboard v-else>
-        </BrandDashboard>
+        <CreateCampaign v-if="hasCampaign">Create Campaign</CreateCampaign>
+        <BrandDashboard v-else>Dashboard</BrandDashboard>
     </div>
 </template>
 
