@@ -5,6 +5,11 @@ import TodoList from './components/TodoList.vue'
 import BrandPage from './BrandPage.vue'
 import InfluencerPage from './InfluencerPage.vue'
 import LandingPage from './LandingPage.vue'
+import InfluencerSignup from './InfluencerSignup.vue'
+import InfluencerSignupName from './InfluencerSignupName.vue'
+import InfluencerSignupLinks from './InfluencerSignupLinks.vue'
+import InfluencerSignupWelcome from './InfluencerSignupWelcome.vue'
+import BrandSignup from './BrandSignup.vue'
 
 Vue.use(Router)
 
@@ -34,6 +39,31 @@ export default new Router({
             path: '/landingPage',
             name: 'landingPage',
             component: LandingPage
+        },
+        {
+            path: '/influencerSignup',
+            name: 'influencerSignup',
+            component: InfluencerSignup
+        },
+        {
+            path: '/influencerSignupName',
+            name: 'influencerSignupName',
+            component: InfluencerSignupName
+        },
+        {
+            path: '/influencerSignupLinks',
+            name: 'influencerSignupLinks',
+            component: InfluencerSignupLinks
+        },
+        {
+            path: '/influencerSignupWelcome',
+            name: 'influencerSignupWelcome',
+            component: InfluencerSignupWelcome
+        },
+        {
+            path: '/brandSignup',
+            name: 'brandSignup',
+            component: BrandSignup
         }
     ]
 })

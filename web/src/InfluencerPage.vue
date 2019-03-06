@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="view-main">
         <InfluencerDashboard>Test</InfluencerDashboard>
     </div>
 </template>

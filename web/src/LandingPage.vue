@@ -1,12 +1,12 @@
 <template>
-    <div>
+    <div class="view-main">
         <h1 class="title">Where Influencers and Brands meet</h1>
         <p>I am</p>
-        <router-link to="/brandPage" class="router-link-text-button">
+        <router-link to="/brandSignup" class="router-link-text-button">
             <b-button class="button-main">Brand</b-button>
         </router-link>
 
-        <router-link to="/influencerPage" class="router-link-text-button">
+        <router-link to="/influencerSignup" class="router-link-text-button">
             <b-button class="button-main">Influencer</b-button>
         </router-link>
     </div>
@@ -29,8 +29,6 @@
         border-radius: 100px !important;
         min-width: 140px !important;
         border-color: #538DFF !important;
-        margin: 8px;
-        padding: 10px;
         min-height: 48px;
         font-weight: bold;
     }
@@ -55,5 +53,6 @@
 
     .view-main {
         padding: 24px;
+        text-align: center;
     }
 </style>
