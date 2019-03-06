@@ -81,8 +81,8 @@ Start doing:\
 – separate development\
 – more work
 
-# 6th week standup:\
+# 6th week standup:
 – Vue.js paging is clear\
 – Frontend for signups is done\
 – Backend should support multiple users\
-– Frontend next do offer showing\
+– Frontend next do offer showing
