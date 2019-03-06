@@ -73,10 +73,10 @@ Influencer can see campaigns posted by brands (get method to Influencer flow)
 Brand can post campaigns (post method to Brand flow)
 
 # 6th week retro:
-Continue doing:
+Continue doing:/*
 – meetings together
 Stop doing:
-– development should happen before meetings and not on meetings
+– development should happen before meetings and not on meetings/*
 Start doing:
 – separate development
 – more work
