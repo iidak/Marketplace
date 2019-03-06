@@ -71,3 +71,18 @@ First iteration presentation slides: https://docs.google.com/presentation/d/1B17
 Frontend – understand how views work in Vue.js and how to navigate between them (eg. Submit button leads to Dashboard).
 Influencer can see campaigns posted by brands (get method to Influencer flow)
 Brand can post campaigns (post method to Brand flow)
+
+# 6th week retro:
+Continue doing:
+– meetings together
+Stop doing:
+– development should happen before meetings and not on meetings
+Start doing:
+– separate development
+– more work
+
+# 6th week standup:
+– Vue.js paging is clear
+– Frontend for signups is done
+– Backend should support multiple users
+– Frontend next do offer showing
