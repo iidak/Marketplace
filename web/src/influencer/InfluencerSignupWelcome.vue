@@ -1,6 +1,6 @@
 <template>
     <div class="view-main">
-        <img src="./assets/checkmark.svg" alt="">
+        <img src="../assets/checkmark.svg" alt="">
         <h1 class="title">Welcome!</h1>
         <p>Set up profile in the future, currently go to dashboard</p>
         <router-link to="/influencerPage" class="router-link-text-button">

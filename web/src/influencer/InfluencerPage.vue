@@ -5,7 +5,7 @@
 </template>
 
 <script>
-    import InfluencerDashboard from './components/InfluencerDashboard.vue'
+    import InfluencerDashboard from '../components/InfluencerDashboard.vue'
 
     export default {
         name: "influencer-page",
