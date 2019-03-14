@@ -2,11 +2,11 @@
     <div class="view-main">
         <h1 class="title">Where Influencers and Brands meet</h1>
         <p>I am</p>
-        <router-link to="/brandSignup" class="router-link-text-button">
+        <router-link to="/brandPage" class="router-link-text-button">
             <b-button class="button-main">Brand</b-button>
         </router-link>
 
-        <router-link to="/influencerSignup" class="router-link-text-button">
+        <router-link to="/influencerPage" class="router-link-text-button">
             <b-button class="button-main">Influencer</b-button>
         </router-link>
     </div>

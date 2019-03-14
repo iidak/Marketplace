@@ -5,11 +5,11 @@
             <h1 class="title">Log in</h1>
             <div class="field">
                 <label>Email</label>
-                <b-input v-model="username" type="text" class="input" aria-describedby="emailDisclaimer" ></b-input>
+                <b-input v-model="username" type="email" class="input"></b-input>
             </div>
             <div class="field">
                 <label>Password</label>
-                <b-input v-model="password" type="password" class="input" aria-describedby="emailDisclaimer" ></b-input>
+                <b-input v-model="password" type="password" class="input"></b-input>
             </div>
 
             <b-button type="submit" class="button-main">Next</b-button>

@@ -4,7 +4,7 @@
             <h1 class="title">Get started as an Influencer</h1>
             <div class="field">
                 <label>Email</label>
-                <b-input v-model="email" type="email" class="input" aria-describedby="emailDisclaimer" />
+                <b-input v-model="email" type="email" class="input" aria-describedby="emailDisclaimer" ></b-input>
                 <b-form-text id="emailDisclaimer">
                     Shown to brands only when you accept.
                 </b-form-text>

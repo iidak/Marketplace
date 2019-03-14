@@ -1,4 +1,4 @@
-package ee.veikosoomets.example.config;
+/*package ee.veikosoomets.example.config;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.security.core.Authentication;
@@ -16,3 +16,4 @@ public class CustomAuthenticationSuccessHandler implements AuthenticationSuccess
         response.setStatus(HttpStatus.ACCEPTED.value());
     }
 }
+*/

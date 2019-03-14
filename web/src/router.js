@@ -11,7 +11,7 @@ import InfluencerSignupName from './influencer/InfluencerSignupName.vue'
 import InfluencerSignupLinks from './influencer/InfluencerSignupLinks.vue'
 import InfluencerSignupWelcome from './influencer/InfluencerSignupWelcome.vue'
 import BrandSignup from './brand/BrandSignup.vue'
-import store from "./store";
+//import store from "./store";
 
 Vue.use(Router)
 
@@ -81,6 +81,7 @@ const router = new Router({
     ]
 });
 
+/*
 router.beforeEach((to, from, next) => {
     const publicPages = ['/login', '/landingPage', '/influencerSignup', '/brandSignup'];
     const authRequired = !publicPages.includes(to.path);
@@ -90,6 +91,6 @@ router.beforeEach((to, from, next) => {
         return next('/login');
     }
     next();
-});
+});*/
 
 export default router;

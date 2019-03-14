@@ -1,4 +1,4 @@
-package ee.veikosoomets.example.config;
+/*package ee.veikosoomets.example.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -20,9 +20,9 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(AuthenticationManagerBuilder authenticationManagerBuilder) throws Exception {
         authenticationManagerBuilder.inMemoryAuthentication()
-                .withUser("veiko").password("{noop}veiko").roles("USER");
+                .withUser("veiko@gmail.cpm").password("{noop}veiko").roles("BRAND");
         authenticationManagerBuilder.inMemoryAuthentication()
-                .withUser("iida").password("{noop}iida").roles("USER");
+                .withUser("iida@gmail.com").password("{noop}iida").roles("INFLUENCER");
     }
 
     @Override
@@ -51,3 +51,4 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
         return source;
     }
 }
+*/
