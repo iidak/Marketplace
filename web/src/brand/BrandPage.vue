@@ -6,8 +6,8 @@
 </template>
 
 <script>
-    import CreateCampaign from './components/CreateCampaign.vue'
-    import BrandDashboard from './components/BrandDashboard.vue'
+    import CreateCampaign from '../components/CreateCampaign.vue'
+    import BrandDashboard from '../components/BrandDashboard.vue'
     export default {
         name: 'brand-page-test',
         components: {

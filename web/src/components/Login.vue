@@ -1,11 +1,21 @@
 <template>
-    <form id="login" v-on:submit.prevent="login">
-        <input type='text' placeholder='username' v-model='username'>
-        <input type='password' placeholder='password' v-model='password'>
-        <button class="ui primary button">
-            Submit
-        </button>
-    </form>
+
+    <div>
+        <form class="fields" id="login" v-on:submit.prevent="login">
+            <h1 class="title">Log in</h1>
+            <div class="field">
+                <label>Email</label>
+                <b-input v-model="username" type="text" class="input" aria-describedby="emailDisclaimer" ></b-input>
+            </div>
+            <div class="field">
+                <label>Password</label>
+                <b-input v-model="password" type="password" class="input" aria-describedby="emailDisclaimer" ></b-input>
+            </div>
+
+            <b-button type="submit" class="button-main">Next</b-button>
+        </form>
+    </div>
+
 </template>
 
 <script>
@@ -23,7 +33,7 @@
             login () {
                 const { username, password } = this;
                 this.$store.dispatch(AUTH_REQUEST, {username, password}).then(() => {
-                    this.$router.push('/landingPage');
+                    this.$router.push('/influencerPage');
                 });
             }
         }

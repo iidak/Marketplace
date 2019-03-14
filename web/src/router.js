@@ -3,21 +3,26 @@ import Router from 'vue-router'
 import SignUp from './components/SignUp.vue'
 import Login from './components/Login.vue'
 import TodoList from './components/TodoList.vue'
-import BrandPage from './BrandPage.vue'
+import BrandPage from './brand/BrandPage.vue'
 import InfluencerPage from './influencer/InfluencerPage.vue'
 import LandingPage from './LandingPage.vue'
 import InfluencerSignup from './influencer/InfluencerSignup.vue'
 import InfluencerSignupName from './influencer/InfluencerSignupName.vue'
 import InfluencerSignupLinks from './influencer/InfluencerSignupLinks.vue'
 import InfluencerSignupWelcome from './influencer/InfluencerSignupWelcome.vue'
-import BrandSignup from './BrandSignup.vue'
+import BrandSignup from './brand/BrandSignup.vue'
 import store from "./store";
 
 Vue.use(Router)
 
 
 const router = new Router({
+    mode: 'history',
     routes: [
+        {
+          path: '/',
+          redirect: '/landingPage'
+        },
         {
             path: '/signup',
             name: 'signup',
@@ -77,7 +82,7 @@ const router = new Router({
 });
 
 router.beforeEach((to, from, next) => {
-    const publicPages = ['/login'];
+    const publicPages = ['/login', '/landingPage', '/influencerSignup', '/brandSignup'];
     const authRequired = !publicPages.includes(to.path);
     const loggedIn = store.getters.isAuthenticated;
 

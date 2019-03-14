@@ -1,10 +1,21 @@
 <template>
     <div>
-        <h1 class="title">Get started as a Brand</h1>
-        <form>
-            <input v-model="brand" type="text" class="input" placeholder="Brand">
-            <input v-model="email" type="email" class="input" placeholder="Email">
-            <input v-model="password" type="password" class="input" placeholder="Password">
+
+        <form class="fields">
+            <h1 class="title">Get started as a Brand</h1>
+            <div class="field">
+                <label>Brand</label>
+                <b-input v-model="brand" type="text" class="input" />
+            </div>
+            <div class="field">
+                <label>Email</label>
+                <b-input v-model="email" type="email" class="input" aria-describedby="emailDisclaimer" />
+            </div>
+            <div class="field">
+                <label>Password</label>
+                <b-input v-model="password" type="password" class="input" aria-describedby="emailDisclaimer" />
+            </div>
+
             <router-link to="/brandPage" class="router-link-text-button">
                 <b-button type="submit" class="button-main" @click="postPost">Next</b-button>
             </router-link>

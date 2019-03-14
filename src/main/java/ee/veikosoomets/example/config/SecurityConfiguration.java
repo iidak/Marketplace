@@ -21,6 +21,8 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
     protected void configure(AuthenticationManagerBuilder authenticationManagerBuilder) throws Exception {
         authenticationManagerBuilder.inMemoryAuthentication()
                 .withUser("veiko").password("{noop}veiko").roles("USER");
+        authenticationManagerBuilder.inMemoryAuthentication()
+                .withUser("iida").password("{noop}iida").roles("USER");
     }
 
     @Override
