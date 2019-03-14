@@ -1,10 +1,13 @@
 package ee.veikosoomets.example.controllers;
 
+import ee.veikosoomets.example.entities.Influencer;
 import ee.veikosoomets.example.entities.User;
+import ee.veikosoomets.example.repository.InfluencerRepository;
 import ee.veikosoomets.example.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import javax.persistence.criteria.CriteriaBuilder;
 import java.util.List;
 
 @CrossOrigin

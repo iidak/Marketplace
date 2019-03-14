@@ -1,7 +1,6 @@
 package ee.veikosoomets.example.entities;
 
 import lombok.AllArgsConstructor;
-import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.Entity;
@@ -14,7 +13,7 @@ public class Brand extends User {
     private String businessName;
 
     public Brand(String email, String password, String firstName, String lastName, String businessName) {
-        super(email, password, firstName, lastName);
+        super(email, password, firstName, lastName, Role.BRAND);
         this.businessName = businessName;
     }
 }
