@@ -1,6 +1,11 @@
 <template>
-    <div class="view-main">
-        <InfluencerDashboard>Test</InfluencerDashboard>
+    <div>
+        <router-link to="/brandPage">
+            <p>Switch to Brand</p>
+        </router-link>
+        <div class="view-main">
+            <InfluencerDashboard></InfluencerDashboard>
+        </div>
     </div>
 </template>
 

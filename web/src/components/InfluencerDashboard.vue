@@ -1,11 +1,9 @@
 <template>
     <div>
-        <h1>Influencer dashboard: </h1>
-        <h2>New offers: </h2>
+        <h1 class="title">Campaigns: </h1>
+        <p>Browse campaigns and see contact details once you press Interested.</p>
         <Offer v-bind:msg="offers">Test</Offer>
         <p></p>
-        <h2>Pending: </h2>
-        <h2>Matched: </h2>
     </div>
 </template>
 

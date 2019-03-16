@@ -18,6 +18,8 @@ public class Campaign {
     private Brand brand;
     private String title;
     private String description;
+    private String email;
+    private String brandName;
     @OneToOne
     private Audience audience;
     @OneToMany
@@ -31,8 +33,10 @@ public class Campaign {
         this.offers = offers;
     }
 
-    public Campaign(String title, String description) {
+    public Campaign(String title, String description, String email, String brandName) {
         this.title = title;
         this.description = description;
+        this.email = email;
+        this.brandName = brandName;
     }
 }

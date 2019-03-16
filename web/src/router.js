@@ -1,7 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import SignUp from './components/SignUp.vue'
-import Login from './components/Login.vue'
 import TodoList from './components/TodoList.vue'
 import BrandPage from './brand/BrandPage.vue'
 import InfluencerPage from './influencer/InfluencerPage.vue'
@@ -27,11 +26,6 @@ const router = new Router({
             path: '/signup',
             name: 'signup',
             component: SignUp
-        },
-        {
-            path: '/login',
-            name: 'login',
-            component: Login
         },
         {
             path: '/todolist',

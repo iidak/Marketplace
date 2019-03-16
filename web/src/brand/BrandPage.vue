@@ -1,23 +1,18 @@
 <template>
     <div>
-        <CreateCampaign v-if="hasCampaign">Create Campaign</CreateCampaign>
-        <BrandDashboard v-else>Dashboard</BrandDashboard>
+        <router-link to="/influencerPage" style="align-content: right">
+            <p>Switch to Influencer</p>
+        </router-link>
+        <CreateCampaign>Create Campaign</CreateCampaign>
     </div>
 </template>
 
 <script>
     import CreateCampaign from '../components/CreateCampaign.vue'
-    import BrandDashboard from '../components/BrandDashboard.vue'
     export default {
         name: 'brand-page-test',
         components: {
-            CreateCampaign,
-            BrandDashboard,
-        },
-        data: function () {
-            return {
-                hasCampaign: true
-            }
+            CreateCampaign
         }
     }
 </script>

@@ -44,7 +44,7 @@
 <style>
 
     .fields {
-        padding-left: 40px;
+        padding-left: 48px;
         padding-right: 48px;
         max-width: 480px;
     }
