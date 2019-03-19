@@ -1,6 +1,6 @@
 package ee.veikosoomets.example.controllers;
 
-import ee.veikosoomets.example.services.EmailService;
+import ee.veikosoomets.example.services.MailService;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
@@ -11,17 +11,16 @@ import java.util.List;
 @RestController
 public class EmailController {
 
-    private EmailService emailService;
+    private MailService mailService;
 
-    public EmailController(EmailService emailService) {
-        this.emailService = emailService;
+    public EmailController(MailService mailService) {
+        this.mailService = mailService;
     }
 
     @PostMapping(value = "/sendemail")
-    public String sendEmail(@RequestBody List<String> recipients) throws MessagingException {
-        for (String recipient: recipients) {
-            emailService.sendmail(recipient);
-        }
+    public String sendEmail(@RequestBody String infulencer, String brand) throws MessagingException {
+        mailService.sendmail(infulencer, brand);
+        mailService.sendmail(brand, infulencer);
         return "Email sent successfully";
     }
 }

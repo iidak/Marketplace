@@ -9,9 +9,9 @@ import java.util.Date;
 import java.util.Properties;
 
 @Service
-public class EmailService {
+public class MailService {
 
-    public void sendmail(String recipient) throws MessagingException {
+    public void sendmail(String recipient, String content) throws MessagingException {
         Properties props = new Properties();
         props.put("mail.smtp.auth", "true");
         props.put("mail.smtp.starttls.enable", "true");
@@ -27,8 +27,9 @@ public class EmailService {
         msg.setFrom(new InternetAddress("marketplaceinfluencers@gmail.com", false));
 
         msg.setRecipients(Message.RecipientType.TO, InternetAddress.parse(recipient));
-        msg.setSubject("Influencer's Marketplace");
-        msg.setContent("Hey! We found you a match!", "text/html");
+        msg.setSubject("We found you a match!");
+        String emailContent = "Hey! We found you a business contact! Your contact's email is: " + content;
+        msg.setContent(emailContent, "text/html");
         msg.setSentDate(new Date());
         Transport.send(msg);
     }
