@@ -1,5 +1,5 @@
 <template>
-    <div class="view-main">
+    <div>
         <form class="fields">
             <h1 class="title">Create campaign: </h1>
             <b-form-group
@@ -63,21 +63,16 @@
             </b-form-group>
 
             <router-link to="" class="router-link-text-button">
-                <b-button type="submit" class="button-main" @click="showModal()">Next</b-button>
+                <b-button type="submit" class="button-main" @click="showModal">Next</b-button>
             </router-link>
 
             <b-modal ref="myModalRef" hide-footer title="">
                 <div class="d-block text-center">
                     <h3>Add photo and verify email</h3>
                     <form class="fields">
-                        <b-form-group
-                                :invalid-feedback="errors.first('code')"
-                                :state="!errors.has('code')"
-                                class="field">
+                        <b-form-group class="fields-left">
                             <label>Enter code sent to your email: </label>
                             <b-form-input
-                                    :state="errors.has('code') ? false : null"
-                                    v-validate="'required|min:3'"
                                     v-model="code"
                                     data-vv-as="field"
                                     name="code"
@@ -85,14 +80,9 @@
                                     class="input">
                             </b-form-input>
                         </b-form-group>
-                        <b-form-group
-                                :invalid-feedback="errors.first('photo')"
-                                :state="!errors.has('photo')"
-                                class="field">
+                        <b-form-group class="fields-left">
                             <label>Add photo by linking URL: </label>
                             <b-form-input
-                                    :state="errors.has('photo') ? false : null"
-                                    v-validate="'required|min:3'"
                                     v-model="photo"
                                     data-vv-as="field"
                                     name="photo"
@@ -101,8 +91,8 @@
                             </b-form-input>
                         </b-form-group>
                     </form>
+                    <b-button class="button-main" @click="addCampaign">Submit Campaign</b-button>
                 </div>
-                <b-button class="button-main" @click="addCampaign">Submit Campaign</b-button>
             </b-modal>
         </form>
     </div>
@@ -131,13 +121,19 @@
                         title: this.title,
                         description: this.description,
                         email: this.email,
-                        brandName: this.brandName}).then(function() {
+                        brandName: this.brandName,
+                        photo: this.photo
+                    }).then(function() {
                             router.push('/landingPage');
                 })
             },
 
-            showModal: function() {
-                this.$refs.myModalRef.show()
+            showModal() {
+                this.$validator.validateAll().then((result => {
+                    if (result) {
+                        this.$refs.myModalRef.show();
+                    }
+                }))
             },
 
             submit() {
@@ -152,5 +148,10 @@
 </script>
 
 <style scoped>
+    .fields-left {
+        text-align: left;
+        margin-bottom: 16px;
+        margin-top: 16px;
+    }
 
 </style>
