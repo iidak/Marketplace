@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="view-main">
         <form class="fields">
             <h1 class="title">Create campaign: </h1>
             <b-form-group
@@ -21,7 +21,7 @@
                     :invalid-feedback="errors.first('title')"
                     :state="!errors.has('title')"
                     class="field">
-                <label>Campaign title: </label>
+                <label class="label">Campaign title: </label>
                 <b-form-input
                         :state="errors.has('title') ? false : null"
                         v-validate="'required|min:3'"
@@ -63,8 +63,47 @@
             </b-form-group>
 
             <router-link to="" class="router-link-text-button">
-                <b-button type="submit" class="button-main" @click="submit">Add</b-button>
+                <b-button type="submit" class="button-main" @click="showModal()">Next</b-button>
             </router-link>
+
+            <b-modal ref="myModalRef" hide-footer title="">
+                <div class="d-block text-center">
+                    <h3>Add photo and verify email</h3>
+                    <form class="fields">
+                        <b-form-group
+                                :invalid-feedback="errors.first('code')"
+                                :state="!errors.has('code')"
+                                class="field">
+                            <label>Enter code sent to your email: </label>
+                            <b-form-input
+                                    :state="errors.has('code') ? false : null"
+                                    v-validate="'required|min:3'"
+                                    v-model="code"
+                                    data-vv-as="field"
+                                    name="code"
+                                    type="text"
+                                    class="input">
+                            </b-form-input>
+                        </b-form-group>
+                        <b-form-group
+                                :invalid-feedback="errors.first('photo')"
+                                :state="!errors.has('photo')"
+                                class="field">
+                            <label>Add photo by linking URL: </label>
+                            <b-form-input
+                                    :state="errors.has('photo') ? false : null"
+                                    v-validate="'required|min:3'"
+                                    v-model="photo"
+                                    data-vv-as="field"
+                                    name="photo"
+                                    type="text"
+                                    class="input">
+                            </b-form-input>
+                        </b-form-group>
+                    </form>
+                </div>
+                <b-button class="button-main" @click="addCampaign">Submit Campaign</b-button>
+            </b-modal>
         </form>
     </div>
 </template>
@@ -80,7 +119,9 @@
                 title: "",
                 description: "",
                 brandName: "",
-                email: ""
+                email: "",
+                photo: "",
+                code: ""
             }
         },
         methods: {
@@ -89,10 +130,14 @@
                     {
                         title: this.title,
                         description: this.description,
-                        email: this.email, brandName:
-                        this.brandName}).then(function() {
+                        email: this.email,
+                        brandName: this.brandName}).then(function() {
                             router.push('/landingPage');
                 })
+            },
+
+            showModal: function() {
+                this.$refs.myModalRef.show()
             },
 
             submit() {

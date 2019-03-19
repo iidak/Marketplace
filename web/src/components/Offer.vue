@@ -11,14 +11,32 @@
         <b-modal ref="myModalRef" hide-footer title="">
             <div class="d-block text-center">
                 <h3>Write {{brand}} an email pls</h3>
-                <p>Email: {{email}}</p>
+                <p>You will recieve an email with {{brand}} contact details.</p>
+                <form class="fields">
+                    <b-form-group
+                            :invalid-feedback="errors.first('email')"
+                            :state="!errors.has('email')"
+                            class="field">
+                        <label>Contact email: </label>
+                        <b-form-input
+                                :state="errors.has('email') ? false : null"
+                                v-model="emailInfluencer"
+                                v-validate="'required|email'"
+                                name="email"
+                                type="email"
+                                class="input"
+                        ></b-form-input>
+                    </b-form-group>
+                </form>
             </div>
-            <b-button class="button-main" @click="hideModal">Done</b-button>
+            <b-button class="button-main" @click="sendEmails">Send</b-button>
         </b-modal>
     </div>
 </template>
 
 <script>
+    import axios from "axios";
+
     export default {
         name: "offer",
         props: {
@@ -27,7 +45,8 @@
         data() {
             return {
                 email: "",
-                brand: ""
+                brand: "",
+                emailInfluencer: "",
             }
         },
         methods: {
@@ -38,8 +57,19 @@
             },
             hideModal() {
                 this.$refs.myModalRef.hide()
+            },
+            sendEmails() {
+                this.$validator.validateAll().then((result => {
+                    if (result) {
+                        axios.post('http://localhost:8080/sendemail',
+                            {
+                                influencer: this.emailInfluencer,
+                                brand: this.email
+                            });
+                    }
+                    this.hideModal()
+                }))
             }
-
         }
     }
 </script>

@@ -21,7 +21,8 @@ public class ExampleApplication {
 		SpringApplication.run(ExampleApplication.class, args);
 	}
 
-	/*@Bean
+
+	@Bean
 	public FilterRegistrationBean simpleCorsFilter() {
 		UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
 		CorsConfiguration config = new CorsConfiguration();
@@ -34,6 +35,6 @@ public class ExampleApplication {
 		FilterRegistrationBean bean = new FilterRegistrationBean<>(new CorsFilter(source));
 		bean.setOrder(Ordered.HIGHEST_PRECEDENCE);
 		return bean;
-	}*/
+	}
 }
 
