@@ -86,3 +86,8 @@ Start doing:\
 – Frontend for signups is done\
 – Backend should support multiple users\
 – Frontend next do offer showing
+
+# Security overview
+– Scripts entered to input fields do not run the posted scripts.
+– SQL injections are not possible
+– We could hash the password we use for your mail provider, but it's not visibly used in frontent, so not critical.
