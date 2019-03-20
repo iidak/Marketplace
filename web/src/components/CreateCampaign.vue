@@ -91,7 +91,7 @@
                             </b-form-input>
                         </b-form-group>
                     </form>
-                    <b-button class="button-main" @click="addCampaign">Submit Campaign</b-button>
+                    <b-button class="button-main" @click="verifyCode">Submit Campaign</b-button>
                 </div>
             </b-modal>
         </form>
@@ -111,38 +111,54 @@
                 brandName: "",
                 email: "",
                 photo: "",
-                code: ""
+                code: null,
+                verified: false,
             }
         },
         methods: {
             addCampaign() {
-                axios.post('http://localhost:8080/addCampaign',
-                    {
-                        title: this.title,
-                        description: this.description,
-                        email: this.email,
-                        brandName: this.brandName,
-                        photo: this.photo
-                    }).then(function() {
-                            router.push('/landingPage');
-                })
+
+                if (this.verified === true) {
+                    axios.post('http://localhost:8080/addCampaign',
+                        {
+                            title: this.title,
+                            description: this.description,
+                            email: this.email,
+                            brandName: this.brandName,
+                            photo: this.photo
+                        }).then(function() {
+                        router.push('/landingPage');
+                    })
+                } else {
+                    alert("Wrong code!")
+                }
             },
 
             showModal() {
                 this.$validator.validateAll().then((result => {
                     if (result) {
                         this.$refs.myModalRef.show();
+                        this.sendCode();
                     }
                 }))
             },
 
-            submit() {
-                this.$validator.validateAll().then((result => {
-                    if (result) {
-                        this.addCampaign()
-                    }
-                }))
+            sendCode() {
+                axios.post('http://localhost:8080/veremail',
+                    {
+                        email: this.email
+                    })
+            },
+
+            verifyCode() {
+                axios.post('http://localhost:8080/checkver',
+                    {
+                        email: this.email,
+                        code: this.code
+                    }).then(response => (this.verified = response.data, this.addCampaign()
+                ))
             }
+
         }
     }
 </script>

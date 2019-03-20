@@ -48,6 +48,7 @@
                 email: "",
                 brand: "",
                 emailInfluencer: "",
+                instagram: ""
             }
         },
         methods: {
