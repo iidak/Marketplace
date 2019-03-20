@@ -93,6 +93,6 @@ Start doing:\
 – We could hash the password we use for our mail provider, but it's not visibly used in frontend, so not critical.\
 – We could add email verification, so you can't post an offer unless you verify your email with a generated code.\
 \
-Overview of our work:\
+Overview of our work:
 - We added email verification to backend, which sends an email with a verification code to the given email address
 - We also added email verification to frontend, so now only brands with verified emails can make campaigns
