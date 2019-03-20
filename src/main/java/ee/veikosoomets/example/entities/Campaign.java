@@ -20,6 +20,7 @@ public class Campaign {
     private String description;
     private String email;
     private String brandName;
+    private String photo;
     @OneToOne
     private Audience audience;
     @OneToMany
@@ -33,10 +34,11 @@ public class Campaign {
         this.offers = offers;
     }
 
-    public Campaign(String title, String description, String email, String brandName) {
+    public Campaign(String title, String description, String email, String brandName, String photo) {
         this.title = title;
         this.description = description;
         this.email = email;
         this.brandName = brandName;
+        this.photo = photo;
     }
 }

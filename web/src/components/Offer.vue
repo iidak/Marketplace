@@ -2,8 +2,9 @@
     <div class="view-main">
         <li v-for="offer in msg" :key="offer.id">
             <div class="offer-card">
-                <p>Brand:</p>
-                <h1>{{offer.title}}</h1>
+                <p>Campaign by {{offer.brandName}}</p>
+                <img class="img-circle" :src=offer.photo>
+                <h1 class="title">{{offer.title}}</h1>
                 <p>{{offer.description}}</p>
                 <b-button class="button-main" @click="showModal(offer)">Interested</b-button>
             </div>
@@ -87,6 +88,14 @@
         max-width: 640px;
         margin-left: auto;
         margin-right: auto;
+    }
+
+    .img-circle {
+        object-fit: cover;
+        height: 64px;
+        width: 64px;
+        border-radius: 50%;
+        margin: 8px 16px 16px;
     }
 
 </style>
