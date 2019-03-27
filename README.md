@@ -98,7 +98,7 @@ Overview of our work in the class:
 - We also added email verification to frontend, so now only brands with verified emails can make campaigns
 
 
-# Functional test cases
+# Functional requirements and test cases
 - When a campaign is successfully added it can be seen under the influencers tab.
   1. User navigates to the brand page
   2. User fills needed fields
@@ -107,12 +107,29 @@ Overview of our work in the class:
   5. User navigates to the influencers tab
   6. User can see the posted campaign
 - When you are under the influencer tab, you can see all the available campaigns.
+  1. User navigates to the influencer page
+  2. Available campaigns are shown
 - When you have entered your e-mail address as a brand, you will receive a verification code to the entered e-mail address.
+  1. User navigates to the brand page
+  2. User fills needed fields, including e-mail
+  3. User receives their verification code to their e-mail address 
 - When a correct code is entered, the campaign gets posted.
+  1. User navigates to the brand page
+  2. User fills needed fields
+  3. User verifies their e-mail address with the verification code
+  4. If the verification code is correct, the campaign gets posted
 - When an incorrect code is entered, the campaign won't be posted.
-- When an influencer enters it's email address under a campaign, then the influencer and the campaign owner will both get e-mails containing each others e-mail addresses.
-  
-# Non-Functional test cases
+  1. User navigates to the brand page
+  2. User fills needed fields
+  3. User verifies their e-mail address with the verification code
+  4. If the verification code is incorrect, the campaign won't get posted
+- When an influencer enters it's email address under a campaign, then the influencer and the campaign owner will both get e-mails   containing each other's e-mail addresses.
+  1. User navigates to the influencer page
+  2. Available campaigns are shown
+  3. User clicks the "Interested" button on a campaign
+  4. User enters their e-mail address and clicks "Send"
+  5. User and the campaign owner both receive an e-mail containing each other's email addresses
+# Non-Functional requirements
 - The user understands how to get to the brand page.
 - The user understands how to get to the influencers page.
 - The user understands what needs to be entered in order to create a campaign.
