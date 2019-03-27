@@ -96,3 +96,20 @@ Start doing:\
 Overview of our work in the class:
 - We added email verification to backend, which sends an email with a verification code to the given email address
 - We also added email verification to frontend, so now only brands with verified emails can make campaigns
+
+
+# Functional test cases
+- When a campaign is successfully added it can be seen under the influencers tab.
+- When you are under the influencer tab, you can see all the available campaigns.
+- When you have entered your e-mail address as a brand, you will receive a verification code to the entered e-mail address.
+- When a correct code is entered, the campaign gets posted.
+- When an incorrect code is entered, the campaign won't be posted.
+- When an influencer enters it's email address under a campaign, then the influencer and the campaign owner will both get e-mails containing each others e-mail addresses.
+  
+# Non-Functional test cases
+- The user understands how to get to the brand page.
+- The user understands how to get to the influencers page.
+- The user understands what needs to be entered in order to create a campaign.
+- The user understands how the e-mail verification works.
+- The user understands how to link to a campaign image.
+- The user understands how to show interest in a campaign.
