@@ -100,6 +100,12 @@ Overview of our work in the class:
 
 # Functional test cases
 - When a campaign is successfully added it can be seen under the influencers tab.
+  1. User navigates to the brand page
+  2. User fills needed fields
+  3. User verifies their e-mail address with the verification code
+  4. Campaign gets posted
+  5. User navigates to the influencers tab
+  6. User can see the posted campaign
 - When you are under the influencer tab, you can see all the available campaigns.
 - When you have entered your e-mail address as a brand, you will receive a verification code to the entered e-mail address.
 - When a correct code is entered, the campaign gets posted.
@@ -113,3 +119,4 @@ Overview of our work in the class:
 - The user understands how the e-mail verification works.
 - The user understands how to link to a campaign image.
 - The user understands how to show interest in a campaign.
+- The application works both in mobile and desktop
