@@ -26,7 +26,7 @@ public class CampaignControllerTest {
 
     Campaign campaign = new Campaign("Test", "Test desc", "emai@email.com", "brand", "photourl");
     Campaign campaign1 = new Campaign("Test", "Test desc", "emai@email.com", "brand", "photourl");
-
+    // Testing if campaigns can be added and retrieved
     @Test
     public void addCampaign() {
 
