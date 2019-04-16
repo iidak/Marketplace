@@ -142,10 +142,11 @@ Overview of our work in the class:
 
 Continue doing:\
 – weekly meetings together\
+– resolving problems in smaller pieces\
+– fast decision making and development\
 Stop doing:\
 – development should happen before meetings and not on meetings\
 Start doing:\
-– separate development\
-– more work
+– more work\
 - uploading the application on AWS
 - make sure that the front-end and back-end are integrated in AWS
