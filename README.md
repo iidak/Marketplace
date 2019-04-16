@@ -147,6 +147,6 @@ Continue doing:\
 Stop doing:\
 – development should happen before meetings and not on meetings\
 Start doing:\
-– more work\
+– more work
 - uploading the application on AWS
 - make sure that the front-end and back-end are integrated in AWS
