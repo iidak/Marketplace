@@ -5,10 +5,6 @@ import TodoList from './components/TodoList.vue'
 import BrandPage from './brand/BrandPage.vue'
 import InfluencerPage from './influencer/InfluencerPage.vue'
 import LandingPage from './LandingPage.vue'
-import InfluencerSignup from './influencer/InfluencerSignup.vue'
-import InfluencerSignupName from './influencer/InfluencerSignupName.vue'
-import InfluencerSignupLinks from './influencer/InfluencerSignupLinks.vue'
-import InfluencerSignupWelcome from './influencer/InfluencerSignupWelcome.vue'
 import BrandSignup from './brand/BrandSignup.vue'
 //import store from "./store";
 
@@ -46,26 +42,6 @@ const router = new Router({
             path: '/landingPage',
             name: 'landingPage',
             component: LandingPage
-        },
-        {
-            path: '/influencerSignup',
-            name: 'influencerSignup',
-            component: InfluencerSignup
-        },
-        {
-            path: '/influencerSignupName',
-            name: 'influencerSignupName',
-            component: InfluencerSignupName
-        },
-        {
-            path: '/influencerSignupLinks',
-            name: 'influencerSignupLinks',
-            component: InfluencerSignupLinks
-        },
-        {
-            path: '/influencerSignupWelcome',
-            name: 'influencerSignupWelcome',
-            component: InfluencerSignupWelcome
         },
         {
             path: '/brandSignup',
