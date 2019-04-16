@@ -137,3 +137,15 @@ Overview of our work in the class:
 - The user understands how to link to a campaign image.
 - The user understands how to show interest in a campaign.
 - The application works both in mobile and desktop
+
+# 12th week retro
+
+Continue doing:\
+– weekly meetings together\
+Stop doing:\
+– development should happen before meetings and not on meetings\
+Start doing:\
+– separate development\
+– more work
+- uploading the application on AWS
+- make sure that the front-end and back-end are integrated in AWS
