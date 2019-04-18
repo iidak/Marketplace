@@ -28,6 +28,17 @@
                                 class="input"
                         ></b-form-input>
                     </b-form-group>
+
+                    <b-form-group class="fields-left">
+                        <label>Link to your social account: </label>
+                        <b-form-input
+                                v-model="socialAccount"
+                                data-vv-as="field"
+                                name="photo"
+                                type="text"
+                                class="input">
+                        </b-form-input>
+                    </b-form-group>
                 </form>
             </div>
             <b-button class="button-main" @click="sendEmails">Send</b-button>
@@ -37,6 +48,7 @@
 
 <script>
     import axios from "axios";
+    import router from "../router.js";
 
     export default {
         name: "offer",
@@ -48,7 +60,7 @@
                 email: "",
                 brand: "",
                 emailInfluencer: "",
-                instagram: ""
+                socialAccount: ""
             }
         },
         methods: {
@@ -66,17 +78,18 @@
                         axios.post('http://localhost:8080/sendemail',
                             {
                                 influencer: this.emailInfluencer,
-                                brand: this.email
+                                brand: this.email,
                             });
                     }
-                    this.hideModal()
+                    this.hideModal();
+                    router.push('/successEmails');
                 }))
             }
         }
     }
 </script>
 
-<style scoped>
+<style>
 
     li {
         list-style-type: none;

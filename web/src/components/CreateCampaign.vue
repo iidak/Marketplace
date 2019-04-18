@@ -66,6 +66,7 @@
                 <b-button type="submit" class="button-main" @click="showModal">Next</b-button>
             </router-link>
 
+
             <b-modal ref="myModalRef" hide-footer title="">
                 <div class="d-block text-center">
                     <h3>Add photo and verify email</h3>
@@ -117,7 +118,6 @@
         },
         methods: {
             addCampaign() {
-
                 if (this.verified === true) {
                     axios.post('http://localhost:8080/addCampaign',
                         {
@@ -127,10 +127,11 @@
                             brandName: this.brandName,
                             photo: this.photo
                         }).then(function() {
-                        router.push('/landingPage');
+                        router.push('/successPost');
                     })
                 } else {
-                    alert("Wrong code!")
+                    alert(this.verified + this.code);
+                    alert("Wrong code!");
                 }
             },
 
@@ -158,7 +159,6 @@
                     }).then(response => (this.verified = response.data, this.addCampaign()
                 ))
             }
-
         }
     }
 </script>

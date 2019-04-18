@@ -1,11 +1,11 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import SignUp from './components/SignUp.vue'
-import TodoList from './components/TodoList.vue'
 import BrandPage from './brand/BrandPage.vue'
 import InfluencerPage from './influencer/InfluencerPage.vue'
 import LandingPage from './LandingPage.vue'
 import BrandSignup from './brand/BrandSignup.vue'
+import Success from './components/Success.vue'
+import SuccessEmails from './components/SuccessEmails.vue'
 //import store from "./store";
 
 Vue.use(Router)
@@ -17,16 +17,6 @@ const router = new Router({
         {
           path: '/',
           redirect: '/landingPage'
-        },
-        {
-            path: '/signup',
-            name: 'signup',
-            component: SignUp
-        },
-        {
-            path: '/todolist',
-            name: 'todolist',
-            component: TodoList
         },
         {
             path: '/brandPage',
@@ -47,20 +37,18 @@ const router = new Router({
             path: '/brandSignup',
             name: 'brandSignup',
             component: BrandSignup
+        },
+        {
+            path: '/successPost',
+            name: 'successPost',
+            component: Success
+        },
+        {
+            path: '/successEmails',
+            name: 'successEmails',
+            component: SuccessEmails
         }
     ]
 });
-
-/*
-router.beforeEach((to, from, next) => {
-    const publicPages = ['/login', '/landingPage', '/influencerSignup', '/brandSignup'];
-    const authRequired = !publicPages.includes(to.path);
-    const loggedIn = store.getters.isAuthenticated;
-
-    if (authRequired && !loggedIn) {
-        return next('/login');
-    }
-    next();
-});*/
 
 export default router;
