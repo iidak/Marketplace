@@ -152,14 +152,14 @@ Start doing:\
 - make sure that the front-end and back-end are integrated in AWS
 
 # 3th iteration mid-term review:
-– backend code cleanup by Sten
-– frontend added success pages and more information from influencer by Iida
-– backend started AWS by Nils
+– backend code cleanup by Sten\
+– frontend added success pages and more information from influencer by Iida\
+– backend started AWS by Nils\
 
 Problems:
-– AWS account creation
+– AWS account creation\
 – time pressure from other subjects
 
 Plans:
-– finish AWS
+– finish AWS\
 – wrap up the project with the team
