@@ -154,12 +154,12 @@ Start doing:\
 # 3th iteration mid-term review:
 – backend code cleanup by Sten\
 – frontend added success pages and more information from influencer by Iida\
-– backend started AWS by Nils\
+– backend started AWS by Nils
 
-Problems:
+Problems:\
 – AWS account creation\
 – time pressure from other subjects
 
-Plans:
+Plans:\
 – finish AWS\
 – wrap up the project with the team
