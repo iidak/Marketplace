@@ -166,5 +166,5 @@ Plans:\
 
 # Diagrams
 
-Get all campaigns diagram: https://ibb.co/vjHHbtL
+Get all campaigns diagram: https://ibb.co/vjHHbtL \
 Post a campaign diagram: https://ibb.co/HFKQvjK
