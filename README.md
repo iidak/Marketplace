@@ -163,3 +163,8 @@ Problems:\
 Plans:\
 – finish AWS\
 – wrap up the project with the team
+
+# Diagrams
+
+Get all campaigns diagram: https://ibb.co/vjHHbtL
+Post a campaign diagram: https://ibb.co/HFKQvjK
