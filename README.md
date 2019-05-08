@@ -193,3 +193,9 @@ Post a campaign diagram: https://ibb.co/HFKQvjK
 - User added a wrong link for the image. The link was of the google search all images page, not the URL of the actual image
 - User quickly found the campaign as an Influencer and filled out the necessary fields
 - User got the confirmation emails and checked the social media link to see, if it works. It did.
+
+Test summary:
+- Filling out the required fields of campaign creation is easily understandable 
+- If paying attention, entering the email confirmation code is easily understandable
+- Understanding entering the image link was the biggest challenge
+- Finding a campaign and confirming Influencer's interest was also easily understandable for everyone
