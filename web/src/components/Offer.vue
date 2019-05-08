@@ -32,9 +32,9 @@
                     <b-form-group class="fields-left">
                         <label>Link to your social account: </label>
                         <b-form-input
-                                v-model="socialAccount"
+                                v-model="social"
                                 data-vv-as="field"
-                                name="photo"
+                                name="social"
                                 type="text"
                                 class="input">
                         </b-form-input>
@@ -60,7 +60,7 @@
                 email: "",
                 brand: "",
                 emailInfluencer: "",
-                socialAccount: ""
+                social: ""
             }
         },
         methods: {
@@ -79,6 +79,7 @@
                             {
                                 influencer: this.emailInfluencer,
                                 brand: this.email,
+                                social: this.social
                             });
                     }
                     this.hideModal();

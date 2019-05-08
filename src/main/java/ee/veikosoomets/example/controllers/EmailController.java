@@ -36,7 +36,7 @@ public class EmailController {
 
     @PostMapping(value = "/sendemail")
     public String sendEmail(@RequestBody Email email) throws MessagingException {
-        mailService.sendmail(email.getInfluencer(), email.getBrand());
+        mailSewrvice.sendmail(email.getInfluencer(), email.getBrand());
         mailService.sendmail(email.getBrand(), email.getInfluencer());
         return "Email sent successfully";
     }
