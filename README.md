@@ -178,3 +178,14 @@ Post a campaign diagram: https://ibb.co/HFKQvjK
 - User was shown that the campaign had been posted and he moved quickly to the Influencer page
 - User filled the Influencer email field with one of the suggested (previously used) email addresses
 - User quickly filled out the final field (link to social media) and got confirmation that connection emails had been sent
+
+2nd test: User's task was to post a campaign as a brand, find the posted campaign as an influencer and connect with the brand.
+- User completed the required fields and then decided to change the already inserted brand name
+- User was a little confused when the popup window opened, not realizing that the confirmation code was necessary
+- User found the confirmation code, entered it and decided to leave the image link field empty
+- User understood that the camapign had been posted and proceeded to the Influencer page
+- User clicked "Interested" and filled out both the email and social media link fields
+- User found the sent emails and even clicked on the social media link to see, if it works
+
+3rd test:
+- 
