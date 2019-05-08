@@ -151,7 +151,7 @@ Start doing:\
 - uploading the application on AWS
 - make sure that the front-end and back-end are integrated in AWS
 
-# 3th iteration mid-term review:
+# 3rd iteration mid-term review:
 – backend code cleanup by Sten\
 – frontend added success pages and more information from influencer by Iida\
 – backend started AWS by Nils
