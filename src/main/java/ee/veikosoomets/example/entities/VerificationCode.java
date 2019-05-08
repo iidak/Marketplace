@@ -13,7 +13,7 @@ import javax.persistence.Id;
 @Entity
 @AllArgsConstructor
 @NoArgsConstructor
-public class VerificationCode {
+public class  VerificationCode {
 
     private @Id
     @GeneratedValue

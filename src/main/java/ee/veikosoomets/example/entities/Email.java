@@ -18,10 +18,17 @@ public class Email {
     Long id;
     private String brand;
     private String influencer;
+    private String social = "";
 
     public Email(String brand, String influencer) {
         this.brand = brand;
         this.influencer = influencer;
     }
+    public Email(String brand, String influencer, String social) {
+        this.brand = brand;
+        this.influencer = influencer;
+        this.social = social;
+    }
+
 
 }
