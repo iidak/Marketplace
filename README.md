@@ -150,3 +150,31 @@ Start doing:\
 – more work
 - uploading the application on AWS
 - make sure that the front-end and back-end are integrated in AWS
+
+# 3th iteration mid-term review:
+– backend code cleanup by Sten\
+– frontend added success pages and more information from influencer by Iida\
+– backend started AWS by Nils
+
+Problems:\
+– AWS account creation\
+– time pressure from other subjects
+
+Plans:\
+– finish AWS\
+– wrap up the project with the team
+
+# Diagrams
+
+Get all campaigns diagram: https://ibb.co/vjHHbtL \
+Post a campaign diagram: https://ibb.co/HFKQvjK
+
+# Product testing
+
+1st test: User's task was to post a campaign as a brand, find the posted campaign as an influencer and connect with the brand.
+- User completed the fields quite fast
+- User had to refresh their email inbox 2 times for the confirmation email to appear
+- User had no interest in filling out the field for an image link
+- User was shown that the campaign had been posted and he moved quickly to the Influencer page
+- User filled the Influencer email field with one of the suggested (previously used) email addresses
+- User quickly filled out the final field (link to social media) and got confirmation that connection emails had been sent
