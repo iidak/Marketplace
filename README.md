@@ -185,7 +185,11 @@ Post a campaign diagram: https://ibb.co/HFKQvjK
 - User found the confirmation code, entered it and decided to leave the image link field empty
 - User understood that the camapign had been posted and proceeded to the Influencer page
 - User clicked "Interested" and filled out both the email and social media link fields
-- User found the sent emails and even clicked on the social media link to see, if it works
+- User found the sent emails in desktop mailing apps and even clicked on the social media link to see, if it works
 
-3rd test:
-- 
+3rd test: User's task was to post a campaign as a brand, find the posted campaign as an influencer and connect with the brand.
+- User started to fill out the required fields for creating a campaign and had a bit of trouble coming up with the content
+- User quickly found the confirmation code and entered it. User also decided to add an image link
+- User added a wrong link for the image. The link was of the google search all images page, not the URL of the actual image
+- User quickly found the campaign as an Influencer and filled out the necessary fields
+- User got the confirmation emails and checked the social media link to see, if it works. It did.
