@@ -11,7 +11,7 @@
         </li>
         <b-modal ref="myModalRef" hide-footer title="">
             <div class="d-block text-center">
-                <h3>Write {{brand}} an email pls</h3>
+                <h3>Give {{brand}} your contact information</h3>
                 <p>You will recieve an email with {{brand}} contact details.</p>
                 <form class="fields">
                     <b-form-group
